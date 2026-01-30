@@ -1,0 +1,10 @@
+[package]
+name = "a3ot_tcp_client"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+a3ot_modbus_protocol = {git = "https://github.com/Seraphim1990/ModbusProtocol"}
+tokio = { version = "1", features = ["full"] }
+oneshot = "0.1.13"
+thiserror = "2.0.18"
