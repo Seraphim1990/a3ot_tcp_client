@@ -7,7 +7,7 @@ use std::net::{SocketAddr, Ipv4Addr};
 use std::time::Duration;
 use tokio::sync::oneshot;
 use tokio::io::AsyncReadExt;
-pub use a3ot_modbus_protocol::{ModbusTCPUnit, ModbusTransportError};
+pub use a3ot_modbus_protocol::{ModbusTCPUnit, ModbusTransportError, RegisterType, ModbusUnitError};
 // ============ ПОМИЛКИ ============
 
 
