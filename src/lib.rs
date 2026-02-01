@@ -426,7 +426,7 @@ impl ModbusTCPClient {
         }
     }
 
-    async fn send_write_request(&self, unit: &mut ModbusTCPUnit) -> Result<(), ModbusTCPError> {
+    pub async fn send_write_request(&self, unit: &mut ModbusTCPUnit) -> Result<(), ModbusTCPError> {
         let msg = match unit.create_write_request() {
             Ok(msg) => msg,
             Err(e) => return Err(ModbusTCPError::ModbusUnitError(e))
